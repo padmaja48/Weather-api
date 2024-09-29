@@ -10,12 +10,11 @@ body {
     background-position: center;
 }
 
-/* Weather container styling - smaller size */
 #weather-container {
     background: rgba(255, 255, 255, 0.3);
-    max-width: 300px; /* Decreased from 400px */
-    padding: 15px; /* Decreased padding */
-    border-radius: 12px; /* Slightly smaller border radius */
+    max-width: 300px;
+    padding: 15px;
+    border-radius: 12px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -24,28 +23,28 @@ body {
 
 h2, label, p {
     color: black;
-    margin: 6px 0; /* Reduced margin */
+    margin: 6px 0;
 }
 
 input {
-    width: calc(100% - 10px); /* Decreased input width */
-    padding: 6px; /* Smaller padding */
+    width: calc(100% - 10px);
+    padding: 6px;
     box-sizing: border-box;
-    border-radius: 8px; /* Smaller border radius */
+    border-radius: 8px;
     border: 1px solid white;
-    margin-top: 15px; /* Reduced margin */
+    margin-top: 15px;
 }
 
 button {
     background: #debff4;
     color: rgb(10, 1, 1);
-    padding: 8px; /* Smaller button size */
+    padding: 8px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    margin-top: 15px; /* Smaller margin */
-    width: 80px; /* Reduced button width */
-    font-size: 13px; /* Smaller font size */
+    margin-top: 15px;
+    width: 80px;
+    font-size: 13px;
 }
 
 button:hover {
@@ -53,24 +52,23 @@ button:hover {
 }
 
 #temp-div p {
-    font-size: 45px; /* Smaller temperature font size */
+    font-size: 45px;
     margin-top: -25px;
 }
 
 #weather-info {
-    font-size: 16px; /* Smaller font size */
+    font-size: 16px;
 }
 
 #weather-icon {
-    width: 120px; /* Smaller weather icon size */
+    width: 120px;
     height: 120px;
-    margin: 0 auto 8px; /* Smaller margins */
+    margin: 0 auto 8px;
     display: none;
 }
 
-/* New styles for humidity and wind speed */
 #humidity-div, #wind-div {
-    margin-top: 8px; /* Reduced top margin */
+    margin-top: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,7 +76,7 @@ button:hover {
 }
 
 #hourly-forecast {
-    margin-top: 15px; /* Reduced margin */
+    margin-top: 15px;
     overflow-x: auto;
     white-space: nowrap;
     display: flex;
@@ -87,50 +85,51 @@ button:hover {
 
 .hourly-item {
     flex: 0 0 auto;
-    width: 60px; /* Reduced item width */
+    width: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 6px; /* Reduced margin between items */
+    margin-right: 6px;
     color: white;
 }
 
 .hourly-item img {
-    width: 25px; /* Smaller icon size */
+    width: 25px;
     height: 25px;
     margin-bottom: 4px;
 }
 
 #hourly-heading {
     color: #fff;
-    margin-top: 8px; /* Reduced margin */
+    margin-top: 8px;
 }
 
 #weather-details {
     display: flex;
-    flex-direction: column; /* Arranged in a column */
+    flex-direction: column;
     align-items: center;
-    margin-top: 15px; /* Reduced margin */
+    margin-top: 15px;
     background: rgba(255, 255, 255, 0.2);
-    padding: 12px; /* Smaller padding */
-    border-radius: 8px; /* Reduced border radius */
-    font-size: 14px; /* Smaller font size */
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
 }
 
 #humidity-div, #wind-div {
     display: flex;
     align-items: center;
     color: white;
-    gap: 8px; /* Smaller gap between icons and text */
-    margin-bottom: 12px; /* Reduced bottom margin */
+    gap: 8px;
+    margin-bottom: 12px;
     justify-content: center;
 }
 
 #humidity-div img, #wind-div img {
-    width: 30px; /* Reduced icon size */
+    width: 30px;
     height: 30px;
 }
 
 #humidity, #wind-speed {
-    font-size: 16px; /* Reduced font size */
+    font-size: 16px;
 }
+
