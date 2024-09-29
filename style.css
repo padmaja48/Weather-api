@@ -1,0 +1,136 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://images.pexels.com/photos/21492/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Weather container styling - smaller size */
+#weather-container {
+    background: rgba(255, 255, 255, 0.3);
+    max-width: 300px; /* Decreased from 400px */
+    padding: 15px; /* Decreased padding */
+    border-radius: 12px; /* Slightly smaller border radius */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+h2, label, p {
+    color: black;
+    margin: 6px 0; /* Reduced margin */
+}
+
+input {
+    width: calc(100% - 10px); /* Decreased input width */
+    padding: 6px; /* Smaller padding */
+    box-sizing: border-box;
+    border-radius: 8px; /* Smaller border radius */
+    border: 1px solid white;
+    margin-top: 15px; /* Reduced margin */
+}
+
+button {
+    background: #debff4;
+    color: rgb(10, 1, 1);
+    padding: 8px; /* Smaller button size */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px; /* Smaller margin */
+    width: 80px; /* Reduced button width */
+    font-size: 13px; /* Smaller font size */
+}
+
+button:hover {
+    background: #8b48d7;
+}
+
+#temp-div p {
+    font-size: 45px; /* Smaller temperature font size */
+    margin-top: -25px;
+}
+
+#weather-info {
+    font-size: 16px; /* Smaller font size */
+}
+
+#weather-icon {
+    width: 120px; /* Smaller weather icon size */
+    height: 120px;
+    margin: 0 auto 8px; /* Smaller margins */
+    display: none;
+}
+
+/* New styles for humidity and wind speed */
+#humidity-div, #wind-div {
+    margin-top: 8px; /* Reduced top margin */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#hourly-forecast {
+    margin-top: 15px; /* Reduced margin */
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hourly-item {
+    flex: 0 0 auto;
+    width: 60px; /* Reduced item width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 6px; /* Reduced margin between items */
+    color: white;
+}
+
+.hourly-item img {
+    width: 25px; /* Smaller icon size */
+    height: 25px;
+    margin-bottom: 4px;
+}
+
+#hourly-heading {
+    color: #fff;
+    margin-top: 8px; /* Reduced margin */
+}
+
+#weather-details {
+    display: flex;
+    flex-direction: column; /* Arranged in a column */
+    align-items: center;
+    margin-top: 15px; /* Reduced margin */
+    background: rgba(255, 255, 255, 0.2);
+    padding: 12px; /* Smaller padding */
+    border-radius: 8px; /* Reduced border radius */
+    font-size: 14px; /* Smaller font size */
+}
+
+#humidity-div, #wind-div {
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 8px; /* Smaller gap between icons and text */
+    margin-bottom: 12px; /* Reduced bottom margin */
+    justify-content: center;
+}
+
+#humidity-div img, #wind-div img {
+    width: 30px; /* Reduced icon size */
+    height: 30px;
+}
+
+#humidity, #wind-speed {
+    font-size: 16px; /* Reduced font size */
+}
